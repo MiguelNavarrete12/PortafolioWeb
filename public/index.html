@@ -7,54 +7,77 @@
     <title>Miguel Navarrete</title>
     <!--Boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    
     <!--Materialize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/fdc54eff55.js" crossorigin="anonymous"></script>
+    
     <!--script-->
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+    
     <!--css-->
     <link rel="stylesheet" href="./Main.css">
 </head>
 <body>
     <div class="container-xxl">
-        <!--navbar-->
-        <nav class="nav-extended">
-          <div class="nav-wrapper">
-            <img src="static/img/Foto_perfil.jpg" class="img" alt="Imagen No Disponible" id="ImagenPrincipal">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Miguel Navarrete</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
-          </div>
-          <div class="nav-content">
-            <ul class="tabs tabs-transparent" >
-              <li class="tab"><a href="#test1">Vida</a></li>
-              <li class="tab"><a class="active" href="#test2">Proyectos</a></li>
-              <li class="tab"><a href="#test3">Mi</a></li>
-              <li class="tab"><a href="#test4">Test 4</a></li>
-            </ul>
-          </div>
-        </nav>
-      
+      <!--navbar-->
+      <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <img src="static/img/Foto_perfil.jpg" class="img" alt="Imagen No Disponible" id="ImagenPrincipal">
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <a style="display: inline;"  href="https://www.linkedin.com/in/miguel-navarrete-carrera-0b79091b9/"><i class="fa-brands fa-linkedin"></i></a>
+            <a style="display: inline;" href="mailto:manavarretecarrera@gmail.com?body=Hola%20buenas%2C%20me%20gustaria%20contactarme%20con%20usted%20"><i class="fa-regular fa-envelope"></i></a>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent" >
+            <li class="tab"><a href="#tarjetaVida">Vida</a></li>
+            <li class="tab"><a class="active" href="#test2">Proyectos</a></li>
+            <li class="tab"><a href="#test3">Mi</a></li>
+            <li class="tab"><a href="#test4">Test 4</a></li>
+          </ul>
+        </div>
         <ul class="sidenav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
+          <li><a href="https://www.linkedin.com/in/miguel-navarrete-carrera-0b79091b9/"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="mailto:manavarretecarrera@gmail.com?body=Hola%20buenas%2C%20me%20gustaria%20contactarme%20con%20usted%20"><i class="fa-regular fa-envelope">Mensaje correo</i></a></li>
         </ul>
-      
-       
-        
+      </nav>
+
+      <!--Vida-->
+      <div class="card mb-3" style="max-width: 540px;" id="tarjetaVida">
+        <a href="vida.html" style="text-decoration-color: transparent" >
+          <div class="row no-gutters" id="tarjeta">
+            <div class="col-md-4">
+              <img src="static/img/Formal2.png" alt="Imagen no Disponible" id="ImagenTarget">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Mi Vida</h5>
+                <p class="card-text">Acá se puede ver una descripción de mi vida junto con mis hobbies.</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>  
     </div>
     
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./static/materialize/js/materialize.js"></script>
+    <script >
+      document.addEventListener('DOMContentLoaded', function() {
+       var elems = document.querySelectorAll('.sidenav');
+       var instances = M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
 
 </html>

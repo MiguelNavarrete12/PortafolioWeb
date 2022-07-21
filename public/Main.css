@@ -6,3 +6,22 @@
 nav{
     background-image: url("static/img/fondo_code.jpg");
 }
+        
+#ImagenTarget{
+    text-align: center;
+    width: 138px;
+    margin-top: 20px;
+}
+
+#tarjeta{
+    text-align: center;
+    display: flex;
+    font-style: oblique;
+    color: black;
+
+}
+
+#tarjetaVida{
+    margin-left: 100px;
+    
+}
